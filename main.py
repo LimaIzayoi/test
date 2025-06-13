@@ -59,7 +59,6 @@ with st.form(key='registration_form', clear_on_submit=True):
         st.session_state.data = pd.concat([st.session_state.data, new_data], ignore_index=True)
         st.success("Dados registrados com sucesso!") # Feedback visual para o usuário
 
----
 
 # Exibição dos Dados em Tabela
 
@@ -72,7 +71,6 @@ if not st.session_state.data.empty:
 else:
     st.info("Nenhum dado registrado ainda. Preencha o formulário acima para começar.")
 
----
 
 # Rodapé
 
